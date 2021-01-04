@@ -65,6 +65,9 @@ body{
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
+  position: relative;
+  top:6rem;
+
 }
 .home-conatiner-1{
   width: 100%;
