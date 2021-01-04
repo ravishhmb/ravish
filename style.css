@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu:wght@300&display=swap');
+:root{
+  --primary-color: aliceblue;
+  --secondary-color:yellow;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url("images/background.jpg");
+  background-attachment:fixed;
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.title{
+  font-size: 2rem;
+  color: aliceblue;
+  font-weight: 500;
+  text-decoration: overline;
+}
+.secondary-text{
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+/*------------------- navigation bar start ---------------- */
+.menu{
+  width: 100%;
+  position: fixed;
+  background: rgb(10,10,10);
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0px 0px 20px yellow;
+  z-index: 3;
+}
+
+.menu-nav{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+.nav-item{
+  list-style: none;
+  margin:0.3rem 1.3rem;
+}
+.nav-item a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+.nav-item a:hover{
+  color: var(--secondary-color);
+  border-top: 3px solid var(--secondary-color);;
+  border-radius: 20px;
+}
+/*------------------- navigation bar End ---------------- */
+
+/* ----------------------------- Home Section Start ----------------------------------- */
+.home-container{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.home-conatiner-1{
+  width: 100%;
+}
+.headings{
+  padding: 1rem;
+  margin:1rem auto;
+}
+.namaste,.secondary-namaste{
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.namaste{
+  background: linear-gradient(orange,white,green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.secondary-namaste,
+.last-name{
+  color: var(--secondary-color);
+}
+.lg-heading{
+  color: var(--primary-color);
+  font-family: 'Audiowide', cursive;
+}
+.lg-heading,
+.last-name{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.sm-heading{
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--primary-color);
+}
+
+.home-container-2{
+  position: relative;
+  margin-top: 5rem;
+  width: 100%;
+}
+.profile-img{
+  width: 100%;
+  text-align: center;
+}
+#profile{
+  width: 40%;
+  border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+}
+
+#hire-btn{
+  position: relative;
+  top: 40px;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  font-weight: 700; 
+  color:aliceblue;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: 0.2s;
+  border-radius: 5px;
+  border: 2px solid var(--secondary-color);
+}
+#hire-btn:hover{
+  box-shadow: 0 0 10px yellow,0 0 40px yellow, 0 0 80px yellow;
+  cursor: pointer;
+}
+
+/* ----------------------------- Home Section End ----------------------------------- */
+
+/* ---------------About section start------------- */
+
+.about-container{
+  position: relative;
+  top: 6rem;
+  width: 100%;
+  height: auto;
+}
+.container-1{
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+}
+.skills-container{
+    position: relative;
+    width: 100%;
+    top: 7rem;
+    margin-bottom: 4rem
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+  }
+/* ---------------About section End-------------- */
+
+/* --------------------Mywork section start--------------------- */
+
+.mywork-container{
+  width: 100%;
+  position: relative;
+  top: 6rem;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  margin: 1rem auto;
+  width: 100%;
+  background-color: aliceblue;
+  box-shadow:0 0 20px rgb(239, 240, 236);
+  border-radius: 7%;
+  transition: all 0.5s ease;
+}
+#drum-img{
+  width: 150px;
+  height: 120px;
+  background-size: cover;
+}
+.text{
+  width: 100%;
+  padding: 0.5rem 0;
+color: tomato;
+font-size: 0.7rem;
+}
+.card:hover{
+  transform: scale(1.03);
+}
+.drum-link{
+  text-decoration: none;
+}
+
+/* --------------------Mywork section End--------------------- */
+
+/* --------------------Contact section start----------------- */
+
+.contact-container{
+  position: relative;
+  top: 10rem;
+}
+.icons{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.icons a{
+  margin:1.5rem;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+.icons a:hover{
+  color: var(--secondary-color);
+  text-shadow: 0 0 40px yellow;
+}
+.mail,
+.number{
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: aliceblue;
+}
+.contact-title{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: var(--secondary-color);
+}
+.mail a{
+  text-decoration: none;
+  color: var(--primary-color);
+
+}
+
+/* --------------------Contact section End----------------- */
+/* 
+@media (min-width:780px){
+
+  .title,
+  .namaste,
+  .secondary-namaste,
+  .secondary-text{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .sm-heading{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .lg-heading,
+  .last-name{
+    font-size: 5rem;
+    font-weight: 500;
+  }
+  .nav-item a{
+    font-size: 1.7rem;
+    margin: 1rem 2rem;
+  }
+  .home-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 10rem;
+  }
+  .home-conatiner-1{
+    width: 100%;
+  }
+  .headings{
+    padding: 1rem;
+    margin:1rem auto;
+    text-align:justify;
+    margin-left: 10rem;
+    line-height: 1.2;
+  }
+  .home-container-2{
+    margin: 0;
+  }
+  .profile-img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  #profile{
+    width: 50%;
+  }
+
+.about-container{
+  top:15rem;
+}
+.about-heading{
+  text-align: left;
+  margin-left: 10rem;
+}
+.container-1{
+  width: 50%;
+  text-align: left;
+  margin-left: 10rem;
+  font-size: 2rem;
+}
+.skills-container,
+.mywork-container{
+  top:20rem;
+  text-align: left;
+  margin-left: 10rem;
+}
+.skills{
+  flex-direction: row;
+}
+.skill-img{
+  padding: 1rem 2rem;
+  width:270px;
+  height: 250px;
+}
+.projects{
+  flex-direction: row;
+}
+.card{
+  margin: 3rem 2rem;
+  width: 80%;
+}
+.img{
+  width:100%;
+  height: auto;
+}
+#drum-img{
+  width:270px;
+  height: 250px;
+  background-size: cover;
+}
+.text{
+width: 100%;
+color: tomato;
+font-size: 1.3rem;
+height: auto;
+}
+.contact-container{
+  top: 25rem;
+  text-align: left;
+  margin-left: 10rem;
+}
+.mail,
+.number{
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.icons{
+  justify-content: start;
+}
+.icons a{
+  margin:1.5rem;
+  font-size: 3rem;
+}
+}   */
