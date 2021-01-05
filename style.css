@@ -65,8 +65,6 @@ body{
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
-  position: relative;
-  top:6rem;
 
 }
 .home-conatiner-1{
@@ -144,7 +142,7 @@ body{
 
 .about-container{
   position: relative;
-  top: 12rem;
+  top: 6rem;
   width: 100%;
   height: auto;
 }
@@ -179,7 +177,7 @@ body{
 .mywork-container{
   width: 100%;
   position: relative;
-  top: 12rem;
+  top: 6rem;
 }
 .projects{
   display: flex;
@@ -218,7 +216,7 @@ font-size: 0.7rem;
 
 .contact-container{
   position: relative;
-  top: 16rem;
+  top: 10rem;
 }
 .icons{
   position: relative;
