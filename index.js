@@ -1,3 +1,27 @@
+let images = [];
+let i = 0;
+let time = 1000;
+images[0] = 'images/logo.png';
+images[1] = 'images/logo2.png';
+images[2] = 'images/logo4.png';
+function changeImage() {
+    document.slide.src = images[i];
+
+    if (i < images.length - 1) {
+        i++;
+    }
+    else {
+        i = 0;
+    }
+    setTimeout("changeImage()", time);
+}
+
+    
+
+window.onload = changeImage;
+
+
+
 
 const texts = ['Namaste,','Hello,','Welcome,'];
 let count = 0;
